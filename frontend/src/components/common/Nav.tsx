@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Menu from './Menu';
 
 const NavBlock = styled.div`
   width: 100%;
@@ -8,6 +9,7 @@ const NavBlock = styled.div`
 const NavListBundle = styled.ul`
   display: flex;
   justify-content: center;
+  align-items: center;
 `;
 
 const NavListItem = styled.li`
@@ -17,6 +19,7 @@ const NavListItem = styled.li`
 const Nav = () => {
   return (
     <NavBlock >
+      <Menu />
       <NavListBundle>
         <NavListItem>송수호</NavListItem>
         <NavListItem>소개</NavListItem>
