@@ -1,4 +1,11 @@
 interface loginForm {
-  id: string;
-  password: any;
+  register: {
+    username: string,
+    password: string,
+    passwordConfirm?: string,
+  },
+  login: {
+    username: string,
+    password: string,
+  }
 };
