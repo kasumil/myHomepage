@@ -13,9 +13,11 @@ const MainBlock = styled.div`
 const ScriptTypo = styled.div`
   font-weight: 800;
   font-size: 40px;
+  margin: 1rem 0;
 `;
 
 const ImgBlock = styled.img`
+  margin-bottom: 2rem;
 `;
 
 const Main = () => {
