@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
+import Nav from '../components/common/Nav';
 
 const MainBlock = styled.div`
   width: 100%;
@@ -23,6 +24,7 @@ const ImgBlock = styled.img`
 const Main = () => {
   return (
     <Fragment>
+      <Nav />
       <MainBlock>
         <ImgBlock src="/images/main.jpg" alt="펭수사진" />
         <ScriptTypo>환영합니다.</ScriptTypo>
