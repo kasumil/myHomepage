@@ -1,4 +1,4 @@
-interface loginForm {
+interface authForm {
   register: {
     username: string,
     password: string,

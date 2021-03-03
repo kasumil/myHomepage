@@ -25,7 +25,7 @@ const initialState = {
   }
 } // 초기 값
 
-const Login = handleActions(
+const login = handleActions(
   {
     [CHANGE_INPUT]: (state, { payload: { form, key, value } }) =>
       produce(state, draft => {
@@ -39,4 +39,4 @@ const Login = handleActions(
   initialState,
 )
 
-export default Login;
+export default login;

@@ -54,21 +54,25 @@ const SubmitButton = styled.button`
   }
 `;
 
-function LoginView() {
+function LoginView({ form, onChange, onSubmit }) {
   return (
     <>
       <Loginblock>
         <LoginBox>
           <Title>Login</Title>
-          <InputBox>
+          <InputBox onSubmit={onSubmit}>
             <OnInput
               name="username"
               placeholder='아이디를 입력해주세요.'
+              onChange={onChange}
+              value={form.username}
             />
             <OnInput
               type='password'
               name='password'
               placeholder="비밀번호를 입력해주세요."
+              onChange={onChange}
+              value={form.password}
             />
             <SubmitButton>버튼</SubmitButton>
           </InputBox>
