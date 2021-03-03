@@ -1,4 +1,4 @@
-interface loginForm {
+export interface auth {
   register: {
     username: string,
     password: string,

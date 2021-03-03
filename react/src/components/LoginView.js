@@ -56,11 +56,11 @@ const SubmitButton = styled.button`
 
 const textMap = {
   login: '로그인',
-  register: '회원가입',
+  register: "회원가입",
 }
 
-function LoginView({ type, form, onChange, onSubmit }) {
-  const text = textMap[type]
+const LoginView = ({ type, form, onChange, onSubmit}) => {
+  const text = textMap[type];
   return (
     <>
       <Loginblock>
@@ -70,17 +70,26 @@ function LoginView({ type, form, onChange, onSubmit }) {
             <OnInput
               name="username"
               placeholder='아이디를 입력해주세요.'
-              value={form.username}
               onChange={onChange}
+              // value={form.username}
             />
             <OnInput
               type='password'
               name='password'
               placeholder="비밀번호를 입력해주세요."
-              value={form.password}
               onChange={onChange}
+              // value={form.password}
             />
-            <SubmitButton>버튼</SubmitButton>
+            {text === 'register' && (
+              <OnInput
+                type='password'
+                name='password'
+                placeholder="비밀번호를 입력해주세요."
+                onChange={onChange}
+                value={form.password}
+              />
+            )}
+            <SubmitButton>{text}</SubmitButton>
           </InputBox>
         </LoginBox>
       </Loginblock>

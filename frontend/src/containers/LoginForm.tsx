@@ -39,7 +39,7 @@ const LoginForm = () => {
 
   return (
     <LoginView
-      type='login'
+      type="login"
       form={form}
       onChange={onChange}
       onSubmit={onSubmit}
@@ -47,6 +47,4 @@ const LoginForm = () => {
   );
 };
 
-
-
-export default LoginForm;
+export default withRouter(LoginForm);
