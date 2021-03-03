@@ -54,7 +54,7 @@ const SubmitButton = styled.button`
   }
 `;
 
-export default function Login() {
+function LoginView() {
   return (
     <>
       <Loginblock>
@@ -62,7 +62,6 @@ export default function Login() {
           <Title>Login</Title>
           <InputBox>
             <OnInput
-              type='text'
               name="username"
               placeholder='아이디를 입력해주세요.'
             />
@@ -78,3 +77,5 @@ export default function Login() {
     </>
   );
 }
+
+export default LoginView;
