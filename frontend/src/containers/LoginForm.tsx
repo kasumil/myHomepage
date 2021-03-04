@@ -1,15 +1,14 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { changeInput, inintialForm } from "../modules/Login";
+import { changeInput, inintialForm } from "../modules/login";
 import LoginView from "../components/LoginView";
 
 
 const LoginForm = () => {
   const dispatch = useDispatch();
-  const { form } = useSelector((state) => {
-    console.log(state);
-    // return { form: state.Login.login }
-  });
+  const form = useSelector(({ login }) => ({
+    form: login.login
+  }));
 
   //인풋 변경 이벤트 핸들러
   const onChange = (e) => {

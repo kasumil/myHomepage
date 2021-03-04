@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Main from "./pages/Main";
 import Introduce from "./pages/Introduce";
-import Login from "./components/LoginView";
+import Login from "./containers/LoginForm";
 
 function Routes() {
   return (
